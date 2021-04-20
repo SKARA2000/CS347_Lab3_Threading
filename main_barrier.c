@@ -5,7 +5,8 @@ void *myfunc(void *args){
 	int tid = m_args->tid;
 	int *myfunc_args = (int *)(m_args->args);
 
-	printf("Hello...you entered thread %d with argument %d\n", tid, *myfunc_args);
+	printf("Hello...you entered thread %d with argument %d\n", 
+	tid, *myfunc_args);
 	printf("Now we enter a barrier\n");
 
 	barrier_synch(m_args->sync_t);

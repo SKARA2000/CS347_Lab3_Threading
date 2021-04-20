@@ -3,7 +3,8 @@
 void *myfunc(void *args){
 	t_arg *t_args = (t_arg*)(args);
 	int *twarg = (int *)(t_args->t_arg_2);
-	printf("Hello...you are in thread %d with argument %d\n", t_args->t_arg_1, *twarg);
+	printf("Hello...you are in thread %d with argument %d\n",
+	t_args->t_arg_1, *twarg);
 	return NULL;
 }
 
